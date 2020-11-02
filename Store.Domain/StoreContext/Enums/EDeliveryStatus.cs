@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Store.Domain.StoreContext.Enums
 {
     public enum EDeliveryStatus
