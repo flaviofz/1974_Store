@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Store.Domain.StoreContext.ValueObjects;
 
 namespace Store.Domain.StoreContext.Entities
 {
     public class Customer
     {
+        private readonly IList<Address> _address;
+
         public Customer
         (
             Name name,
@@ -18,7 +21,7 @@ namespace Store.Domain.StoreContext.Entities
             Document = document;
             Email = email;
             Phone = phone;
-            Addresses = new List<Address>();
+            _address = new List<Address>();
         }
 
         // Propriedades
@@ -26,7 +29,13 @@ namespace Store.Domain.StoreContext.Entities
         public Document Document { get; private set; }
         public Email Email { get; private set; }
         public string Phone { get; private set; }
-        public IReadOnlyCollection<Address> Addresses { get; private set; }
+        public IReadOnlyCollection<Address> Addresses => _address.ToArray();
+
+        public void AddAddress(Address address)
+        {
+            // Adicionar o endereço
+            _address.Add(address);
+        }
 
         public override string ToString()
         {
