@@ -5,6 +5,6 @@ namespace Store.Domain.StoreContext.Enums
         Waiting = 1,
         Shipped = 2,
         Delivered = 3,
-        Cancelede = 4
+        Canceled = 4
     }
 }
