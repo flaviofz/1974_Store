@@ -29,6 +29,8 @@ namespace Store.Tests
             // Realizando o pedido
             order.Place();
 
+            var valid = order.IsValid;
+
             // Pagamento
             order.Pay();
 
