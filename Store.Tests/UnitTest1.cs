@@ -21,10 +21,10 @@ namespace Store.Tests
             var cadeira = new Product("Cadeira", "cadeira", "image.png", 559.90M, 10);
 
             var order = new Order(customer);
-            order.AddItem(new OrderItem(mouse, 5));
-            order.AddItem(new OrderItem(teclado, 5));
-            order.AddItem(new OrderItem(cadeira, 5));
-            order.AddItem(new OrderItem(impressora, 5));
+            // order.AddItem(new OrderItem(mouse, 5));
+            // order.AddItem(new OrderItem(teclado, 5));
+            // order.AddItem(new OrderItem(cadeira, 5));
+            // order.AddItem(new OrderItem(impressora, 5));
 
             // Realizando o pedido
             order.Place();
