@@ -5,7 +5,7 @@ namespace Store.Domain.StoreContext.Commands.CustomerCommands.Input
 {
     public class AddAddressCommand
     {
-        public Guid idCliente { get; set; }
+        public Guid idCustomer { get; set; }
         public string Street { get; set; }
         public string Number { get; set; }
         public string Complement { get; set; }
