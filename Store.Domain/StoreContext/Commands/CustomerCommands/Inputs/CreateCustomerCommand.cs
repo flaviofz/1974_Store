@@ -2,7 +2,7 @@ using FluentValidator;
 using FluentValidator.Validation;
 using Store.Shared.Commands;
 
-namespace Store.Domain.StoreContext.Commands.CustomerCommands.Input
+namespace Store.Domain.StoreContext.Commands.CustomerCommands.Inputs
 {
     public class CreateCustomerCommand : Notifiable, ICommand
     {

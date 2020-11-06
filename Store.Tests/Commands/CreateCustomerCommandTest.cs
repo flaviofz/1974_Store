@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Store.Domain.StoreContext.Commands.CustomerCommands.Input;
+using Store.Domain.StoreContext.Commands.CustomerCommands.Inputs;
 
 namespace Store.Tests
 {
