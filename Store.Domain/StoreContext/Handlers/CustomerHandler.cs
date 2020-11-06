@@ -17,7 +17,9 @@ namespace Store.Domain.StoreContext.Handlers
         {
             #region Validacao No Banco
             // Verificar se CPF existe na base
+
             // Verificar se E-mail existe na base
+
             #endregion
 
             #region Criando VOs e Entidades
