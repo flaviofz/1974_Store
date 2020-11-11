@@ -1,7 +1,7 @@
 using System;
 using Store.Domain.StoreContext.Enums;
 
-namespace Store.Domain.StoreContext.Commands.CustomerCommands.Input
+namespace Store.Domain.StoreContext.Commands.CustomerCommands.Inputs
 {
     public class AddAddressCommand
     {
