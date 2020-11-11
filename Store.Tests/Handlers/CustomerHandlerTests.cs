@@ -15,13 +15,16 @@ namespace Store.Tests
             command.FirstName = "Flavio";
             command.LastName = "Zavarise";
             command.Email = "flaviofz@gmail.com";
-            command.Document = "12345678912";
+            command.Document = "13120696781";
 
             Assert.AreEqual(true, command.Valid());
 
             var handler = new CustomerHandler(new FakeCustomerRepository(), new FakeEmailService());
 
+            var result = handler.Handle(command);
 
+            Assert.AreNotEqual(null, result);
+            Assert.AreEqual(true, handler.IsValid);
         }
     }
 }
