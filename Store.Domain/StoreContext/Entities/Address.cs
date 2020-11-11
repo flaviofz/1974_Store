@@ -1,11 +1,9 @@
-using System;
-using FluentValidator;
 using Store.Domain.StoreContext.Enums;
-using Store.Domain.StoreContext.ValueObjects;
+using Store.Shared.Entities;
 
 namespace Store.Domain.StoreContext.Entities
 {
-    public class Address : Notifiable
+    public class Address : Entity
     {
         public Address
         (

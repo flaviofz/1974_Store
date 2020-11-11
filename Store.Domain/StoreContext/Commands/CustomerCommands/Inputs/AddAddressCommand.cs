@@ -20,7 +20,7 @@ namespace Store.Domain.StoreContext.Commands.CustomerCommands.Inputs
 
         public bool Valid()
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }

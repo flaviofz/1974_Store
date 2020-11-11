@@ -6,7 +6,6 @@ namespace Store.Domain.StoreContext.Commands.CustomerCommands.Inputs
 {
     public class CreateCustomerCommand : Notifiable, ICommand
     {
-
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Document { get; set; }
